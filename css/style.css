@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-panel {
+  margin: 10rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-layout {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.card-title {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", "sans-serif";
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.card-description {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", "sans-serif";
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+}
+.card-1 {
+  border-radius: 1rem 1rem 0 0;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.btn {
+  width: 8.5rem;
+  height: 2.5rem;
+  border: 0.2rem solid hsl(0, 0%, 95%);
+  border-radius: 2rem;
+  font-family: "Lexend Deca", "sans-serif";
+  background-color: hsl(0, 0%, 95%);
+  text-align: center;
+}
+
+.btn:hover {
+  background: none;
+  color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (min-width: 41.2rem) {
+  .card-panel {
+    flex-direction: row;
+    max-width: 800px;
+    min-height: 1000px;
+    align-items: center;
+    margin: auto;
+  }
+
+  .card-1 {
+    border-radius: 1rem 0 0 1rem;
+    background-color: hsl(31, 77%, 52%);
+  }
+
+  .card-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 1rem 1rem 0;
+    flex-basis: 3rem;
+  }
+
+  .card-title {
+    margin-bottom: auto;
+    text-align: left;
+  }
+
+  .card-description {
+    margin: 2rem 0;
+    text-align: start;
+  }
+}
